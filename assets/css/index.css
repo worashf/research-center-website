@@ -242,6 +242,16 @@ flex-direction: row;
     width: 100px;
     height: 100px;
 }
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.footer .logo img{
+   height: 100px;
+}
 @media screen and (min-width:768px) {
     
     .head-line{
@@ -305,6 +315,10 @@ flex-direction: row;
     .partners{
     display: flex;
     flex-direction: row;
+    }
+    .footer{
+      
+        flex-direction: row;
     }
     
 }
