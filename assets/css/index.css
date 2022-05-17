@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+
+    
+}
+a:active{
+    color: #ec5242;
+}
+a:hover{
+    color: #ec5242;
+}
+ul {
+    list-style: none;
+}
+.secondary-header{
+    background-color: black;
+    padding: 10px 0;
+}
+.secondary-header .secondary-nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10%;
+}
+    
+.top-nav-icon{
+   margin-right: 50px;
+ 
+}
+.top-nav-icon a{
+    color: #fff;
+}
+.top-nav-icon a:active{
+    color: #ec5242;
+}
+.top-nav-icon a:hover{
+    color: #ec5242;
+}
+.main-header{
+    height: 80px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.logo img{
+ height: 100px;
+ width: auto;
+
+}
+.company-name{
+    color: #272a31;
+    font-family: 'Lato0',sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0;
+}
+.company-name:hover{
+    color: #ec5242;
+}
+.main-nav {
+display: flex;
+flex-direction: row;
+
+
+}
+.main-nav li{
+    padding: 20px;
+
+}
+
+.main-nav .nav-link{
+    color: #272a31;
+   font-family: 'lato', sans-serif;;
+   font-size: 20px;
+}
+.main-nav .nav-link:hover{
+    color: #ec5242;
+}
+
+.head-line{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(/assets/images/mobile-bg.png);
+  
+
+    
+
+}
+.info{
+    background-color: #fff;
+   
+}
+.head-line .title-1{
+  font-family: 'cocogoose';
+  color: #ec5242;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding: 10px;
+  margin: 0 10px;
+}
+.head-line .title-2{
+    font-family: 'lato',sans-serif;
+    color: #ec5242;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0 10px;
+}
+.info {
+    padding: 10px;
+    margin: 0 10px;
+}
+.info .text-3{
+    font-size: 15px;
+    font-family: 'lato',sans-serif;
+     
+}
+.head-line .text-1{
+    font-size: 20px;
+    font-family: 'lato',sans-serif; 
+    margin: 10px 20px;
+}
+.head-line .text-2{
+    font-size: 15px;
+    font-family: 'lato',sans-serif; 
+    margin: 10px 20px;
+}
+.services{
+
+ background-image:   linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(/assets//images/landing-image.jpeg) ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  
+}
+.services .title{
+    text-align: center;
+    margin-top: 50px;
+}
+.service-card{
+    display: flex;
+    background-color: #272a31;
+    margin: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #fff;
+    padding: 10px 5px;
+}
+.service-img{
+    font-size: 50px;
+    color: #fff;
+}
+.service-card .title-3{
+    font-size: 18px;
+
+}
+.service-card .text-3{
+    font-size: 15px;
+}
+
+
+@media screen and (min-width:768px) {
+    
+    .head-line{
+        min-height: 110vh;
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       padding-left: 10%;
+       padding-right: 20%;
+        background-image: url(/assets/images/mobile-bg.png);
+    
+    
+        
+    
+    }
+    .info{
+        background-color: #fff;
+        margin-right: 50%;
+        margin-top: 2%;
+        padding: 2%;
+    }
+    .head-line .title-1{
+      font-family: 'COCOGOOSE',sans-serif;
+      color: #ec5242;
+      text-transform: uppercase;
+      font-size: 50px;
+      padding: 10px;
+    }
+    .head-line .title-2{
+        font-family: 'lato',sans-serif;
+        color: #ec5242;
+        padding: 10px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    
+    .info .text-3{
+        font-size: 15px;
+        font-family: 'lato',sans-serif;
+    }
+    .info .text-1{
+        font-size: 15px;
+        font-family: 'lato',sans-serif; 
+    }
+}
+
