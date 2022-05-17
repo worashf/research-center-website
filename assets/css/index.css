@@ -144,7 +144,7 @@ flex-direction: row;
     font-family: 'lato',sans-serif; 
     margin: 10px 20px;
 }
-.services{
+.container{
 
  background-image:   url(/assets//images/main-bg.png) ;
   display: flex;
@@ -155,12 +155,17 @@ flex-direction: row;
 
   
 }
-.services .title{
+.services{
+    display: flex;
+    flex-direction: column;
+}
+.container .title{
     text-align: center;
     margin-top: 50px;
     color: #fff;
+    font-family: 'lato',Arial, Helvetica, sans-serif;
 }
-.services .title::after{
+.container .title::after{
     content: "";
     display: block;
     border: 1px solid #ec5242;
@@ -189,11 +194,13 @@ flex-direction: row;
     font-family: 'lato';
     color: #ec5242;
     padding: 5px;
+    font-family: 'lato',Arial, Helvetica, sans-serif;
     
 
 }
 .service-card .text-3{
     font-size: 15px;
+    font-family: 'lato',Arial, Helvetica, sans-serif;
 
 }
 .services-link{
@@ -204,8 +211,37 @@ flex-direction: row;
     font-family: 'lato',Arial, Helvetica, sans-serif;
     text-align: center;
 }
-
-
+.partner-conatiner{
+ background-color: #272a31;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 2%;
+}
+.partner-conatiner .title-2{
+    color: #fff;
+}
+.partner-conatiner .title-2::after{
+    content: "";
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #ec5242;
+    width: 50px;
+}
+.partners{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1%;
+    flex-direction: column;
+}
+.partners li{
+    padding: 10px;
+}
+.partner-img{
+    width: 100px;
+    height: 100px;
+}
 @media screen and (min-width:768px) {
     
     .head-line{
@@ -249,6 +285,26 @@ flex-direction: row;
     .info .text-1{
         font-size: 15px;
         font-family: 'lato',sans-serif; 
+    }
+    .services{
+        flex-direction:row;
+       margin: 0 auto;
+    }
+    .service-card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+       
+    }
+ 
+    .service-card .text-3{
+       padding: 10px;
+    
+    }
+    .partners{
+    display: flex;
+    flex-direction: row;
     }
     
 }
