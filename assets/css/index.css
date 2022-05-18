@@ -124,14 +124,14 @@ ul {
   left: 0;
   background-color:  #272a31;
   opacity: 0.9;
-  transition: 0.8s;
+  transition: 0.5s;
+  z-index: 2;
  
 }
 .main-nav {
 display: flex;
 flex-direction: column;
-justify-content: center;
-align-items: center;
+
 }
 .main-nav .meetup{
     border: 2px solid #ec5242;
@@ -273,6 +273,86 @@ align-items: center;
     font-family: 'lato',Arial, Helvetica, sans-serif;
     text-align: center;
 }
+
+.our-team{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    padding: 10px;
+    background-color: #fff;
+}
+.our-team .title-2{
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'lato',Arial, Helvetica, sans-serif;
+}
+.our-team .title-2::after{
+    content: "";
+    display: block;
+    border: 1px solid #ec5242;
+    width: 50px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.team{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 6% 0;
+  padding: 10px;
+  
+}
+.team:hover{
+    border: 1px solid #d5d9e2;
+}
+.profile-img{
+    position: relative;
+    margin-right: 30px;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    background-color:#272a31;
+   
+}
+.chess-img{
+    height: 70px;
+    width: 60px;
+    margin-top: -20px;
+    margin-right: -40px;
+    background-color: #fff;
+    opacity: 0.4;
+}
+ .team-name{
+    font-family: 'lato',Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #272a31;
+    margin-bottom: 5px;
+}
+.position{
+    font-family: 'lato',Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #ec5242;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.position::after{
+    content: "";
+    display: block;
+    border: 1px solid #989ca5;
+    width: 20px;
+    margin: 10px 0;
+    opacity: 0.5;
+    
+}
+.rule{
+    font-family: 'lato',Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #272a31;
+  
+}
 .partner-conatiner{
  background-color: #272a31;
  display: flex;
@@ -309,10 +389,28 @@ align-items: center;
     flex-direction: column;
     background-color: lightgray;
     padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer .logo img{
-   height: 100px;
+
+.footer .footer-logo {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+   
+}
+.footer .footer-logo  img{
+ height: 100px;
+ width: auto;
+ margin-right: 20px;
+
+}
+.footer p{
+    font-family: 'lato',Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #272a31;
+    padding: 20px;
 }
 @media screen and (min-width:768px) {
     .secondary-header{
@@ -405,13 +503,31 @@ align-items: center;
        padding: 10px;
     
     }
+    .team-conatiner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        margin: 10px 5%;
+   
+       
+        
+      }
+      .team{
+          display: flex;
+          flex-direction: row;
+
+      }
+
     .partners{
     display: flex;
     flex-direction: row;
     }
     .footer{
-      
-        flex-direction: row;
+      flex-direction: row;
+
+    }
+    .footer p{
+        margin-right: 10%;
     }
     
 }
