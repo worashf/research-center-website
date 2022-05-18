@@ -81,6 +81,7 @@ ul {
     left: 30px;
     padding-bottom: 5%;
  
+ 
   }
   .hide-menu{
       visibility: hidden;
@@ -116,10 +117,9 @@ ul {
     
 }
 .menu-overlay{
- height: 100%;
+ height: 100vh;
   width: 100%;
   position: fixed;
-  z-index: 3;
   top: 0;
   left: 0;
   background-color:  #272a31;
