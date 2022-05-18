@@ -22,12 +22,14 @@ ul {
 .secondary-header{
     background-color: black;
     padding: 10px 0;
+    display: none;
 }
 .secondary-header .secondary-nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-right: 10%;
+
 }
     
 .top-nav-icon{
@@ -44,20 +46,17 @@ ul {
     color: #ec5242;
 }
 .main-header{
-    height: 80px;
-    border-bottom: 1px solid #eee;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+    height: 0px;
+
 
 }
+
+
 .logo{
     display: flex;
     align-items: center;
     padding: 0 10%;
+    visibility: hidden;
 }
 .logo img{
  height: 100px;
@@ -74,21 +73,83 @@ ul {
 .company-name:hover{
     color: #ec5242;
 }
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    padding-bottom: 5%;
+ 
+  }
+  .hide-menu{
+      visibility: hidden;
+  }
+  .menu .bar {
+    width: 40px;
+    height: 3px;
+    margin: 3px 0;
+    background-color:  #272a31;
+    cursor: pointer;
+    visibility: visible;
+
+  }
+  
+
+.open .line-1{
+  transform: rotate(-45deg) translate(6px,6px);
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background-color: #fff;
+  
+}
+.open .line-2{
+    opacity: 0;
+}
+.open .line-3{
+    transform: rotate(45deg) translate(6px,-6px);
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: #fff;
+    
+}
+.menu-overlay{
+ height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color:  #272a31;
+  opacity: 0.9;
+  transition: 0.8s;
+ 
+}
 .main-nav {
 display: flex;
-flex-direction: row;
-
-
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.main-nav .meetup{
+    border: 2px solid #ec5242;
+    padding: 10px;
+    color: #ec5242;
+    font-family: "lato",Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 .main-nav li{
     padding: 20px;
 
+
 }
 
 .main-nav .nav-link{
-    color: #272a31;
+    color: #fff;
    font-family: 'lato', sans-serif;;
-   font-size: 20px;
+   font-size: 25px;
 }
 .main-nav .nav-link:hover{
     color: #ec5242;
@@ -100,6 +161,7 @@ flex-direction: row;
     flex-direction: column;
     justify-content: center;
     background-image: url(/assets/images/mobile-bg.png);
+    
   
 
     
@@ -253,7 +315,26 @@ flex-direction: row;
    height: 100px;
 }
 @media screen and (min-width:768px) {
-    
+    .secondary-header{
+        display: block;
+    }
+    .main-header{
+        height: 80px;
+        border-bottom: 1px solid #eee;
+        background: #fff;
+        display: flex;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        
+    }
+    .main-nav{
+        visibility: visible;
+        flex-direction: row;
+    }
+    .main-header .logo{
+      visibility:visible;
+    }
     .head-line{
         min-height: 110vh;
         display: flex;
@@ -267,6 +348,18 @@ flex-direction: row;
         
     
     }
+    .bar{
+        opacity: 0;
+    }
+    .main-nav .nav-link{
+        color: #272a31;
+        font-size: 18px ;
+    
+    }
+    .main-nav .nav-link:hover{
+        color: #ec5242;
+    }
+    
     .info{
         background-color: #fff;
         margin-right: 50%;
