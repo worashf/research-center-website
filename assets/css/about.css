@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-@import url('http://fonts.cdnfonts.com/css/cocogoose');
 
 * {
   margin: 0;
@@ -83,10 +82,12 @@ ul {
 .menu {
   display: flex;
   flex-direction: column;
-  position: fixed;
-  top: 30px;
-  left: 30px;
-  padding-bottom: 5%;
+  position: absolute;
+  top: 0;
+  background-color: transparent;
+  width: 100%;
+  padding: 25px;
+  z-index: 3;
 }
 
 .hide-menu {
@@ -94,7 +95,7 @@ ul {
 }
 
 .menu .bar {
-  width: 40px;
+  width: 30px;
   height: 3px;
   margin: 3px 0;
   background-color: #272a31;
@@ -129,7 +130,7 @@ ul {
   top: 0;
   left: 0;
   background-color: #272a31;
-  opacity: 0.9;
+  opacity: 1;
   transition: 0.5s;
   z-index: 2;
 }
@@ -296,18 +297,21 @@ ul {
 
 .experiances {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .success {
   position: relative;
   margin: 10px;
-  height: 200px;
   transition: all 0.2s;
+  flex: 1;
+  padding: 10px;
+  height: 250px;
 }
 
 .success:hover {
-  height: 205px;
+  height: 253px;
 }
 
 .experiance-text {
@@ -325,7 +329,7 @@ ul {
 
 .success .experiance-img {
   width: 100%;
-  height: 100%;
+  object-fit: cover;
   background-color: #ec5242;
   display: block;
 }
@@ -352,8 +356,9 @@ ul {
   font-weight: 400;
   font-family: 'lato', sans-serif;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
+  margin-top: 5%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -366,7 +371,7 @@ ul {
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: rgb(15, 14, 14);
+  background-color: #272a31;
   padding: 20px;
   justify-content: center;
   align-items: center;
@@ -415,6 +420,10 @@ ul {
     flex-direction: row;
   }
 
+  .menu {
+    background-color: transparent;
+  }
+
   .main-header .logo {
     visibility: visible;
   }
@@ -452,6 +461,7 @@ ul {
 
   .experiances {
     flex-direction: row;
+    padding: 0 10%;
   }
 
   .our-experiance .text-3 {
