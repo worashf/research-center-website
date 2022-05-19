@@ -44,7 +44,7 @@ This Web site is developed for Upper technologies
 
 
 ## Online Demo version
-https://worashf.github.io/capstone-project-one-website/
+ https://worashf.github.io/research-center-website/
 
 ## Contributors
 
