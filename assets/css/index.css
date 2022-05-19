@@ -17,6 +17,7 @@ a:active {
 
 a:hover {
   color: #ec5242;
+  cursor: pointer;
 }
 
 ul {
@@ -83,11 +84,12 @@ ul {
 .menu {
   display: flex;
   flex-direction: column;
-  position: fixed;
-  top: 30px;
-  left: 30px;
-  padding-bottom: 5%;
-  z-index: 9;
+  position: absolute;
+  top: 0;
+  background-color: transparent;
+  width: 100%;
+  padding: 25px;
+  z-index: 3;
 }
 
 .hide-menu {
@@ -95,7 +97,7 @@ ul {
 }
 
 .menu .bar {
-  width: 40px;
+  width: 30px;
   height: 3px;
   margin: 3px 0;
   background-color: #272a31;
@@ -130,7 +132,7 @@ ul {
   top: 0;
   left: 0;
   background-color: #272a31;
-  opacity: 0.9;
+  opacity: 1;
   transition: 0.5s;
   z-index: 2;
 }
@@ -142,7 +144,7 @@ ul {
 
 .main-nav .meetup {
   border: 2px solid #ec5242;
-  padding: 10px;
+  padding: 5px;
   color: #ec5242;
   font-family: "lato", Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -162,12 +164,17 @@ ul {
   color: #ec5242;
 }
 
+.main-nav .nav-item:hover {
+  color: #ec5242;
+}
+
 .head-line {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-image: url(../images/mobile-bg.png);
+  background-size: cover;
 }
 
 .head-line .title-1 {
@@ -218,6 +225,8 @@ ul {
   justify-content: center;
   background-color: #111;
   padding: 5% 0;
+  background-position: 100% 100%;
+  width: 100%;
 }
 
 .services {
@@ -403,7 +412,7 @@ ul {
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: lightgray;
+  background-color: white;
   padding: 20px;
   justify-content: center;
   align-items: center;
@@ -508,9 +517,12 @@ ul {
     font-family: 'lato', sans-serif;
   }
 
+
   .services {
     flex-direction: row;
     margin: 0 auto;
+    flex-wrap: wrap;
+    width: 90%;
   }
 
   .service-card {
