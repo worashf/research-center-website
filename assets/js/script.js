@@ -43,21 +43,18 @@ const header = document.getElementById('main-header');
 const mainNav = document.getElementById('main-nav');
 const teamWrapper = document.getElementById('team-container');
 const sticky = header.offsetTop;
-const menuStiky = menu.offsetTop;
-const prevScrollpos = window.pageYOffset;
 
 window.onscroll = () => {
-  if (window.pageYOffset >= sticky || prevScrollpos >= menuStiky) {
-    menu.style.top = '30px';
+  if (window.pageYOffset >= sticky) {
     header.style.top = 0;
   } else {
-    menu.style.top = '-50px';
     header.style.top = '5%';
   }
 };
 
 function toggleMenu() {
   header.classList.toggle('menu-overlay');
+
   menu.classList.toggle('open');
   mainNav.classList.toggle('hide-menu');
 }
