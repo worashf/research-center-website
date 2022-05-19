@@ -24,14 +24,14 @@ const teamMembers = [
     rule: 'Practice practice practice build skills, work smart get the job done. ',
 
   }, {
-    name: 'Worash Abocherugn',
-    profilePic: '/assets/images/worash.jpeg',
+    name: 'Wakas Bule',
+    profilePic: '/assets/images/waks.jpeg',
     position: 'Founder and CTO',
     rule: 'Practice practice practice build skills, work smart get the job done. ',
 
   }, {
-    name: 'Worash Abocherugn',
-    profilePic: '/assets/images/worash.jpeg',
+    name: 'Tedla Adisu',
+    profilePic: '/assets/images/tedla.jpeg',
     position: 'Founder and CTO',
     rule: 'Practice practice practice build skills, work smart get the job done. ',
 
@@ -43,19 +43,17 @@ const header = document.getElementById('main-header');
 const mainNav = document.getElementById('main-nav');
 const teamWrapper = document.getElementById('team-container');
 const sticky = header.offsetTop;
+const menuStiky = menu.offsetTop;
+const prevScrollpos = window.pageYOffset;
 
-let prevScrollpos = window.pageYOffset;
-
-const currentScrollPos = window.pageYOffset;
 window.onscroll = () => {
-  if (window.pageYOffset >= sticky || prevScrollpos > currentScrollPos) {
+  if (window.pageYOffset >= sticky || prevScrollpos >= menuStiky) {
     menu.style.top = '30px';
     header.style.top = 0;
   } else {
     menu.style.top = '-50px';
     header.style.top = '5%';
   }
-  prevScrollpos = currentScrollPos;
 };
 
 function toggleMenu() {
