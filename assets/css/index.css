@@ -84,7 +84,7 @@ ul {
 .menu {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   background-color: transparent;
   width: 100%;
