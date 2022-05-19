@@ -64,7 +64,7 @@ ul {
 }
 
 .logo img {
-  height: 100px;
+  height: 75px;
   width: auto;
 }
 
@@ -87,6 +87,7 @@ ul {
   top: 30px;
   left: 30px;
   padding-bottom: 5%;
+  z-index: 9;
 }
 
 .hide-menu {
@@ -166,7 +167,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(/assets/images/mobile-bg.png);
+  background-image: url(../images/mobile-bg.png);
 }
 
 .head-line .title-1 {
@@ -211,7 +212,7 @@ ul {
 }
 
 .container {
-  background-image: url(/assets//images/main-bg.png);
+  background-image: url(../images/main-bg.png);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -458,7 +459,7 @@ ul {
     justify-content: center;
     padding-left: 10%;
     padding-right: 20%;
-    background-image: url(/assets/images/mobile-bg.png);
+    background-image: url(../images/mobile-bg.png);
   }
 
   .bar {
