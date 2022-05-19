@@ -1,37 +1,37 @@
 const teamMembers = [
   {
     name: 'Worash Abocherugn',
-    profilePic: '/assets/images/worash.jpeg',
+    profilePic: 'assets/images/worash.jpeg',
     position: 'Founder and CTO',
     rule: 'Practice practice practice build skills, work smart get the job done. ',
 
   }, {
     name: 'Dagmawi zewudu',
-    profilePic: '/assets/images/dagm.jpeg',
+    profilePic: 'assets/images/dagm.jpeg',
     position: 'Founder and CTO',
     rule: 'Practice practice practice build skills, work smart get the job done. ',
 
   }, {
     name: 'Addis Kebede',
-    profilePic: '/assets/images/addis.jpeg',
+    profilePic: 'assets/images/addis.jpeg',
     position: 'Founder and CTO',
     rule: 'Practice practice practice build skills, work smart get the job done. ',
 
   }, {
     name: 'Sntayhu Boyamo',
-    profilePic: '/assets/images/snte.jpeg',
+    profilePic: 'assets/images/snte.jpeg',
     position: 'Founder and CTO',
     rule: 'Practice practice practice build skills, work smart get the job done. ',
 
   }, {
     name: 'Wakas Bule',
-    profilePic: '/assets/images/waks.jpeg',
+    profilePic: 'assets/images/waks.jpeg',
     position: 'Founder and CTO',
     rule: 'Practice practice practice build skills, work smart get the job done. ',
 
   }, {
     name: 'Tedla Adisu',
-    profilePic: '/assets/images/tedla.jpeg',
+    profilePic: 'assets/images/tedla.jpeg',
     position: 'Founder and CTO',
     rule: 'Practice practice practice build skills, work smart get the job done. ',
 
@@ -43,15 +43,11 @@ const header = document.getElementById('main-header');
 const mainNav = document.getElementById('main-nav');
 const teamWrapper = document.getElementById('team-container');
 const sticky = header.offsetTop;
-const menuStiky = menu.offsetTop;
-const prevScrollpos = window.pageYOffset;
 
 window.onscroll = () => {
-  if (window.pageYOffset >= sticky || prevScrollpos >= menuStiky) {
-    menu.style.top = '30px';
+  if (window.pageYOffset >= sticky) {
     header.style.top = 0;
   } else {
-    menu.style.top = '-50px';
     header.style.top = '5%';
   }
 };
