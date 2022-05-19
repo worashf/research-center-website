@@ -64,7 +64,7 @@ ul {
 }
 
 .logo img {
-  height: 100px;
+  height: 75px;
   width: auto;
 }
 
@@ -164,7 +164,7 @@ ul {
 .about-head-line {
   display: flex;
   flex-direction: column;
-  background-image: url(/assets/images/mobile-bg.png);
+  background-image: url("../images/mobile-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -426,7 +426,7 @@ ul {
     justify-content: center;
     padding-left: 10%;
     padding-right: 20%;
-    background-image: url(/assets/images/mobile-bg.png);
+    background-image: url(../images/mobile-bg.png);
   }
 
   .bar {
