@@ -83,7 +83,7 @@ ul {
 .menu {
   display: flex;
   flex-direction: column;
-  position: fixed;
+  position: absolute;
   top: 30px;
   left: 30px;
   padding-bottom: 5%;
@@ -94,7 +94,7 @@ ul {
 }
 
 .menu .bar {
-  width: 40px;
+  width: 30px;
   height: 3px;
   margin: 3px 0;
   background-color: #272a31;
@@ -129,7 +129,7 @@ ul {
   top: 0;
   left: 0;
   background-color: #272a31;
-  opacity: 0.9;
+  opacity: 1;
   transition: 0.5s;
   z-index: 2;
 }
@@ -297,6 +297,7 @@ ul {
 .experiances {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .success {
@@ -304,6 +305,7 @@ ul {
   margin: 10px;
   height: 200px;
   transition: all 0.2s;
+  flex: 1;
 }
 
 .success:hover {
@@ -366,7 +368,7 @@ ul {
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: rgb(15, 14, 14);
+  background-color: #272a31;
   padding: 20px;
   justify-content: center;
   align-items: center;
@@ -452,6 +454,7 @@ ul {
 
   .experiances {
     flex-direction: row;
+    width: 90%;
   }
 
   .our-experiance .text-3 {
