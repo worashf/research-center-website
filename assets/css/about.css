@@ -296,20 +296,16 @@ ul {
 
 .experiances {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .success {
   position: relative;
   margin: 10px;
-  height: 200px;
-  transition: all 0.2s;
+  height: 220px;
   flex: 1;
-}
-
-.success:hover {
-  height: 205px;
 }
 
 .experiance-text {
@@ -329,7 +325,6 @@ ul {
   width: 100%;
   object-fit: cover;
   background-color: #ec5242;
-  display: block;
 }
 
 .success .experiance-img:hover {
