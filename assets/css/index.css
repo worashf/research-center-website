@@ -59,7 +59,7 @@ ul {
 .logo {
   display: flex;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 5%;
   visibility: hidden;
 }
 
@@ -149,17 +149,21 @@ ul {
 }
 
 .main-nav li {
-  padding: 20px;
+  padding: 15px;
 }
 
 .main-nav .nav-link {
   color: #fff;
   font-family: 'lato', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .main-nav .nav-link:hover {
   color: #ec5242;
+}
+
+.desk-link {
+  display: block;
 }
 
 .head-line {
@@ -448,6 +452,8 @@ ul {
     background: #fff;
     display: flex;
     position: fixed;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
     z-index: 1;
   }
@@ -455,6 +461,7 @@ ul {
   .main-nav {
     visibility: visible;
     flex-direction: row;
+    justify-content: flex-start;
   }
 
   .main-header .logo {

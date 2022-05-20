@@ -161,6 +161,10 @@ ul {
   color: #ec5242;
 }
 
+.desk-link {
+  display: block;
+}
+
 .about-head-line {
   display: flex;
   flex-direction: column;
