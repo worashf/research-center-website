@@ -276,15 +276,26 @@ ul {
 
 .our-experiance {
   display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
   flex-direction: column;
-  margin: 10px 0;
+  padding: 30px 0;
 }
 
 .our-experiance .title-3 {
-  color: #ec5242;
-  font-size: 18px;
+  color: #272a31;
+  font-size: 20px;
   font-family: 'lato', sans-serif;
   text-align: center;
+}
+
+.our-experiance .title-3::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #ec5242;
+  width: 50px;
+  margin: 5px auto;
 }
 
 .our-experiance .text-3 {
@@ -297,15 +308,11 @@ ul {
 .experiances {
   display: flex;
   flex-direction: column;
-
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .success {
   position: relative;
-  margin: 10px;
-  height: 220px;
+  margin: 5px;
   width: 100%;
 }
 
@@ -324,7 +331,8 @@ ul {
 
 .success .experiance-img {
   width: 100%;
-  object-fit: cover;
+  display: block;
+  height: 100%;
   background-color: #ec5242;
 }
 
@@ -334,32 +342,23 @@ ul {
 
 .experiance-text .expriance-title {
   color: white;
-  font-size: 18px;
-  font-family: 'lato', sans-serif;
+  font-size: 20px;
   position: absolute;
   top: 30%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  left: 10%;
 }
 
 .experiance-text .text-3 {
   color: white;
-  font-size: 15px;
-  font-weight: 400;
-  font-family: 'lato', sans-serif;
+  font-size: 20px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: 1;
+  top: 45%;
+  left: 15%;
+  margin-top: 10px;
 }
 
 .success .experiance-text {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .footer {
@@ -451,11 +450,28 @@ ul {
 
   .experiances {
     flex-direction: row;
-    padding: 0 10%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .success {
+    margin: 0 10px;
+    height: 300px;
+    width: 100%;
   }
 
   .our-experiance .text-3 {
     text-align: center;
+  }
+
+  .experiance-text .expriance-title {
+    top: 30%;
+    left: 20%;
+  }
+
+  .experiance-text .text-3 {
+    top: 45%;
+    left: 10%;
   }
 
   .footer {
