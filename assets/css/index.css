@@ -461,6 +461,10 @@ ul {
     visibility: visible;
   }
 
+  .desk-link {
+    display: none;
+  }
+
   .head-line {
     min-height: 110vh;
     display: flex;
