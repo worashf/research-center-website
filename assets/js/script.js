@@ -54,7 +54,6 @@ window.onscroll = () => {
 
 function toggleMenu() {
   header.classList.toggle('menu-overlay');
-
   menu.classList.toggle('open');
   mainNav.classList.toggle('hide-menu');
 }

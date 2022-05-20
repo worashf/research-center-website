@@ -17,7 +17,6 @@ a:active {
 
 a:hover {
   color: #ec5242;
-  cursor: pointer;
 }
 
 ul {
@@ -84,11 +83,10 @@ ul {
 .menu {
   display: flex;
   flex-direction: column;
-  /* position: absolute; */
-  top: 0;
-  background-color: transparent;
-  width: 100%;
-  padding: 25px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding-bottom: 5%;
   z-index: 3;
 }
 
@@ -144,7 +142,7 @@ ul {
 
 .main-nav .meetup {
   border: 2px solid #ec5242;
-  padding: 5px;
+  padding: 10px;
   color: #ec5242;
   font-family: "lato", Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -161,10 +159,6 @@ ul {
 }
 
 .main-nav .nav-link:hover {
-  color: #ec5242;
-}
-
-.main-nav .nav-item:hover {
   color: #ec5242;
 }
 
@@ -469,6 +463,7 @@ ul {
     padding-left: 10%;
     padding-right: 20%;
     background-image: url(../images/mobile-bg.png);
+    background-size: cover;
   }
 
   .bar {
@@ -517,11 +512,9 @@ ul {
     font-family: 'lato', sans-serif;
   }
 
-
   .services {
     flex-direction: row;
     margin: 0 auto;
-    flex-wrap: wrap;
     width: 90%;
   }
 
