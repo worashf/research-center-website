@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
 
 * {
   margin: 0;
@@ -84,12 +84,9 @@ ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 0;
-  background-color: transparent;
-  width: 100%;
-  padding: 25px;
-  z-index: 3;
-
+  top: 30px;
+  left: 30px;
+  padding-bottom: 5%;
 }
 
 .hide-menu {
@@ -299,22 +296,16 @@ ul {
 
 .experiances {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .success {
   position: relative;
   margin: 10px;
-  transition: all 0.2s;
-  flex: 1;
-  padding: 10px;
-  height: 250px;
- 
-}
-
-.success:hover {
-  height: 253px;
+  height: 220px;
+  width: 100%;
 }
 
 .experiance-text {
@@ -332,9 +323,8 @@ ul {
 
 .success .experiance-img {
   width: 100%;
-  height: 100%;
+  object-fit: cover;
   background-color: #ec5242;
-  display: block;
 }
 
 .success .experiance-img:hover {
@@ -359,9 +349,8 @@ ul {
   font-weight: 400;
   font-family: 'lato', sans-serif;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
-  margin-top: 5%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -421,9 +410,6 @@ ul {
   .main-nav {
     visibility: visible;
     flex-direction: row;
-  }
-  .menu {
-    background-color: transparent;
   }
 
   .main-header .logo {
