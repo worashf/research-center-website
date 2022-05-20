@@ -357,7 +357,7 @@ ul {
   font-size: 20px;
   position: absolute;
   top: 45%;
-  left: 15%;
+  left: 10%;
   margin-top: 10px;
 }
 
@@ -368,7 +368,7 @@ ul {
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: #272a31;
+  background-color: white;
   padding: 20px;
   justify-content: center;
   align-items: center;
@@ -389,7 +389,7 @@ ul {
 .footer p {
   font-family: 'lato', Arial, Helvetica, sans-serif;
   font-size: 15px;
-  color: #fff;
+  color: #272a31;
   padding: 20px;
 }
 
@@ -488,9 +488,11 @@ ul {
 
   .footer {
     flex-direction: row;
+    background-color: #272a31;
   }
 
   .footer p {
     margin-right: 10%;
+    color: white;
   }
 }
