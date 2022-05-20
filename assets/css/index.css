@@ -273,12 +273,18 @@ ul {
 }
 
 .services-link {
-  text-decoration: underline;
+  text-decoration: none;
   color: #fff;
-  padding: 30px;
+  padding: 20px;
   font-size: 25px;
   font-family: 'lato', Arial, Helvetica, sans-serif;
   text-align: center;
+  background-color: #ec5242;
+  margin: 5%;
+}
+
+.services-link:hover {
+  background-color: #fff;
 }
 
 .our-team {
@@ -534,6 +540,17 @@ ul {
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     margin: 10px 5%;
+  }
+
+  .services-link {
+    text-decoration: underline;
+    text-align: center;
+    background-color: transparent;
+    margin: auto;
+  }
+
+  .services-link:hover {
+    background-color: transparent;
   }
 
   .team {
