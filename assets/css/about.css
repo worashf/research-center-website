@@ -59,7 +59,7 @@ ul {
 .logo {
   display: flex;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 5%;
   visibility: hidden;
 }
 
@@ -400,6 +400,8 @@ ul {
     background: #fff;
     display: flex;
     position: fixed;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     z-index: 1;
   }
@@ -411,6 +413,7 @@ ul {
   .main-nav {
     visibility: visible;
     flex-direction: row;
+    align-items: center;
   }
 
   .main-header .logo {
