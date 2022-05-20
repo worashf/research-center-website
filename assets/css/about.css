@@ -148,13 +148,13 @@ ul {
 }
 
 .main-nav li {
-  padding: 20px;
+  padding: 15px;
 }
 
 .main-nav .nav-link {
   color: #fff;
   font-family: 'lato', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .main-nav .nav-link:hover {
@@ -401,7 +401,7 @@ ul {
     display: flex;
     position: fixed;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     z-index: 1;
   }
@@ -413,7 +413,7 @@ ul {
   .main-nav {
     visibility: visible;
     flex-direction: row;
-    align-items: center;
+    justify-content: flex-start;
   }
 
   .main-header .logo {
