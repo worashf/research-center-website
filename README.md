@@ -38,15 +38,15 @@ This Web site is developed for Upper technologies.
 
 👤 **Worash Abocherugn**
 
-- GitHub: [@githubhandle](https://github.com/worashf)
-- Twitter: [@twitterhandle](https://twitter.com/WorashAboche)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/worash-abocherugn-a02219154/)
+- GitHub: [woashf](https://github.com/worashf)
+- Twitter: [worash Aboche](https://twitter.com/WorashAboche)
+- LinkedIn: [worash-Abocherugn](https://www.linkedin.com/in/worash-abocherugn-a02219154/)
 
 
 
-## [Online Demo version]( https://worashf.github.io/research-center-website/)
+## [Online Demo]( https://worashf.github.io/research-center-website/)
 
- ## [ Demo description  video] (https://www.loom.com/share/7055844e94b34166a14f9aecad89cdb1)
+ ## [Demo description  video](https://www.loom.com/share/7055844e94b34166a14f9aecad89cdb1)
 
 ## Contributors
 
