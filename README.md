@@ -5,13 +5,13 @@
 
 
 
-*** HTML5/CSS3 and JavaScript basics capstone project on github !**
-This Web site is developed for Upper technologies 
+HTML5/CSS3 and JavaScript basics capstone project on github !
+This Web site is developed for Upper technologies.
 
-***  Desktop version screenshot !**
+### Desktop version screenshot
 ![screenshot](assets/images/home-screen.png)
 
-***  mobile version screenshot !**
+###  mobile version screenshot !
 ![screenshot](assets/images/mobile-screen.png)
 
 
@@ -33,6 +33,7 @@ This Web site is developed for Upper technologies
 * Open the index.html in your browser and check it
 * Add your addition
 * Push to your github or deploy to cloud
+
 ## Authors
 
 👤 **Worash Abocherugn**
@@ -43,11 +44,9 @@ This Web site is developed for Upper technologies
 
 
 
-## Online Demo version
- https://worashf.github.io/research-center-website/
+## [Online Demo version]( https://worashf.github.io/research-center-website/)
 
- ## Demo description  video
- https://www.loom.com/share/7055844e94b34166a14f9aecad89cdb1
+ ## [ Demo description  video] (https://www.loom.com/share/7055844e94b34166a14f9aecad89cdb1)
 
 ## Contributors
 
